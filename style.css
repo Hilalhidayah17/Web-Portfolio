@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's width and height */
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden; /* Disable scrolling */
+}
+
+.home-container {
+  height: 100vh; /* Take up the full viewport height */
+  width: 100vw; /* Take up the full viewport width */
+  position: relative;
+  display: flex;
+}
+
+.home-container > img {
+  width: 100vw; /* Make the image cover the entire width */
+  height: 100vh; /* Make the image cover the entire height */
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+  overflow: hidden;
+  filter: grayscale(100%);
+}
+/* section 1 */
+.section-container1 {
+  top: 0;
+  position: absolute;
+  background-color: #201e43f3;
+  height: 100vh;
+  width: 30vw; /* Ensure it also covers the full width */
+}
+
+.profile-picture {
+  width: 9rem;
+  border-radius: 50%;
+  height: 9rem;
+  margin-top: 4rem;
+  margin-bottom: 1.4rem;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+}
+
+.name,
+.my-info {
+  color: whitesmoke;
+  text-align: center;
+}
+.navigation-extendable {
+  text-align: left;
+  padding-left: 2.5rem;
+  color: white;
+  margin-top: 28px;
+}
+.navigation-extendable a {
+  color: white;
+  text-decoration: none;
+}
+.navigation-extendable a:hover {
+  color: blue;
+  text-decoration: wavy;
+}
+.navigation-extendable li {
+  list-style-type: none;
+  margin-bottom: 0.8rem;
+}
+
+/* Social container */
+.social-container {
+  margin-top: 20px;
+}
+.social-container img {
+  margin-top: 20px;
+  width: 1.8rem;
+  margin-right: 12px;
+}
+
+.section-container2 {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  color: white;
+}
+
+.section-container2 > h1 {
+  font-size: 5rem;
+}
+.section-container2 > p {
+  font-size: 2em;
+}
